@@ -45,14 +45,15 @@ function Section3() {
         title="Talents"
         subtitle="Gain marketing talent"
         description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
-        imgSrc="/books.svg"
         imgAlt="Marketing professional"
-      />
-     <Card
-        title="Talents"
-        subtitle="Gain marketing talent"
-        description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
         imgSrc="/talents.svg"
+      />
+      <Card
+        title="Our blogs"
+        subtitle="Learn about marketing"
+        description="Learn marketing basics with our blog and build an
+impressive talented marketing team. "
+        imgSrc="/books.svg"
         imgAlt="Marketing professional"
       />
     </div>

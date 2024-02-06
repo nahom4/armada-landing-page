@@ -42,30 +42,34 @@ const Card: React.FC<CardProps> = ({
 function Section4() {
   return (
     <div className="bg-black text-white p-12 py-14 flex flex-col items-center ">
-        <h1 className="font-bold text-5xl">Finding remote marketing talent</h1>
-        <p className='my-7 text-lg text-center'>
-          {" "}
-          Hunting for remote marketing stars is like finding digital unicorns –
-          it takes a mix of tech savvy and a keen sense for the real gems who
-          can spark online magic for your brand. Let's build a virtual dream
-          team together! Tasks digital marketers Crowdsource simple marketing
-          tasks Hire affordable digital marketers Post quick and simple tasks to
-          get done by emerging marketers. Get connected with, manage, and pay
-          vetted digital marketers Learn More Learn More
-        </p>
+      <h1 className="font-bold text-5xl">Finding remote marketing talent</h1>
+      <p className="my-7 text-lg text-center">
+        {" "}
+        Hunting for remote marketing stars is like finding digital unicorns – it
+        takes a mix of tech savvy and a keen sense for the real gems who can
+        spark online magic for your brand. Let's build a virtual dream team
+        together! Tasks digital marketers Crowdsource simple marketing tasks
+        Hire affordable digital marketers Post quick and simple tasks to get
+        done by emerging marketers. Get connected with, manage, and pay vetted
+        digital marketers Learn More Learn More
+      </p>
       <div className="flex mx-7 gap-6">
         <Card
-          title="Talents"
-          subtitle="Gain marketing talent"
-          description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
-          imgSrc="/books.svg"
+          title="Tasks"
+          subtitle="Crowdsource simple
+marketing tasks"
+          description="Post quick and simple tasks to get done by emerging
+marketers."
+          imgSrc="/tasks-business-card.svg"
           imgAlt="Marketing professional"
         />
         <Card
-          title="Talents"
-          subtitle="Gain marketing talent"
-          description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
-          imgSrc="/talents.svg"
+          title="Digital Marketers"
+          subtitle="Hire affordable digital 
+marketers"
+          description="Get connected with, manage, and pay vetted
+digital marketers"
+          imgSrc="/circle-girl.svg"
           imgAlt="Marketing professional"
         />
       </div>

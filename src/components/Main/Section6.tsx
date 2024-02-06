@@ -3,17 +3,14 @@ import Link from 'next/link'
 
 function Section6() {
   return (
-    <div className="h-[100vh] flex flex-col items-center justify-center text-center relative px-auto">
+    <div className="flex flex-col items-center justify-center text-center relative px-auto">
       <div className="space-y-3 z-10  font-semibold pt-24">
         <h1 className="text-4xl  tracking-tighter sm:text-3xl xl:text-6xl/none">
-          ROI Marketing,Only
+          Get started with
         </h1>
         <h1 className="text-4xl  tracking-tighter sm:text-3xl xl:text-6xl/none">
-          pay per performance
+          Armada Marketing
         </h1>
-        <p className="mx-auto max-w-[700px]  text-xxl mb-12">
-          No upfront costs. Your ROI Is Our Priority – Pay Us When You Profit.
-        </p>
         <div className="space-x-4 py-7">
           <Link
             href="#_"

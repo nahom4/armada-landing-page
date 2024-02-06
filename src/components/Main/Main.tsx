@@ -4,10 +4,11 @@ import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Image from "next/image";
 import Section4 from "./Section4";
+import Section6 from "./Section6";
 
 function Main() {
   return (
-    <div>
+    <div className="flex flex-col gap-8">
     <div className="h-[100vh] flex flex-col items-center justify-center text-center relative px-auto">
       <div className="space-y-3 z-10  font-semibold pt-24">
         <h1 className="text-4xl  tracking-tighter sm:text-3xl xl:text-6xl/none">
@@ -29,6 +30,7 @@ function Main() {
         </div>
       </div>
     </div>
+
     <div className="flex justify-center">
       <Image
         src="/images/section.png"
