@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -15,12 +16,17 @@ function Header() {
       className={`z-20 fixed w-full bg-white transition-all duration-200 px-6 `}
     >
       <div className=" mx-auto px-4 py-2 flex justify-between items-center">
-        <h1 className="text-2xl font-sans font-bold ">
-          Armada Marketing
-        </h1>
+        <div className="flex gap-2 items-center">
+          <Image
+            src="/logo.svg"
+            width={30}
+            height={30}
+            alt="Armada Marketing"
+          />
+          <h1 className="text-2xl font-sans font-bold ">Armada Marketing</h1>
+        </div>
 
         <nav className="space-x-5 flex items-center text-xl font-semibold min-w-fit">
-          
           <Link
             className=" hover:text-yellow-500 dark:hover:text-yellow-500 "
             href="#"
@@ -31,7 +37,7 @@ function Header() {
             className=" hover:text-yellow-500 dark:hover:text-yellow-500 "
             href="#"
           >
-           Blog
+            Blog
           </Link>
           <Link
             className=" hover:text-yellow-500 dark:hover:text-yellow-500 "
