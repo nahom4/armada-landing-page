@@ -54,7 +54,7 @@ export default function Component() {
   );
 }
 
-function AnchorIcon(props) {
+function AnchorIcon(props:any) {
   return (
     <svg
       {...props}
