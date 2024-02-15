@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer/Footer2";
 
 import "./globals.css";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <body className={`${inter.className} overflow-x-hidden`}>
         <Header />
         {children}
         <Footer />
         </body>
+      
+      </head>
     </html>
   );
 }
