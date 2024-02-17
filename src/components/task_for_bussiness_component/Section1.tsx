@@ -44,7 +44,7 @@ function Section1(){
                     <div className="flex flex-col justify-between">
                         <div>
                             <Image
-                            src="tasks-for-bussines-images/white-man.svg"
+                            src="/./tasks-for-bussines-images/white-man.svg"
                             alt="Picture of the author"
                             width={71}
                             height={121}
