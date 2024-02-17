@@ -5,7 +5,7 @@ import React from "react";
 import {Popover} from "@headlessui/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import {rubik} from '@/app/fonts'
+import {jost, rubik} from '@/app/fonts'
 function NavLink({link,text }:{link : string, text : string}){
     return (
             <Link
@@ -64,8 +64,7 @@ function Header() {
               </div>
             </Popover.Panel>
           </Popover>
-          <nav className="space-x-5 md:flex items-center min-w-fit hidden text-sm">
-
+          <nav className={`${jost.className} space-x-5 md:flex items-center min-w-fit hidden text-sm`}>
             <NavLink link ='#' text={'Carear'}/>
             <NavLink link ='#' text={'Blog'}/>
             <NavLink link ='#' text={'Contact'}/>

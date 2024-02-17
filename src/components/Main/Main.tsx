@@ -12,10 +12,10 @@ function Main() {
     <div className="flex flex-col gap-8">
     <div className="flex flex-col items-center justify-center text-center relative px-auto">
       <div className="space-y-3 z-10  font-medium	 pt-40 flex flex-col gap-2">
-        <h2 className={`${rubik.className} tracking-tighter text-[#222222]`}>
+        <h2 className={`${rubik.className} tracking-tighter text-[#2e2d2d]`}>
             ROI Marketing, 
         </h2>
-        <h2 className={`${rubik.className} tracking-tighter text-[#222222]`}>
+        <h2 className={`${rubik.className} tracking-tighter text-[#2e2d2d]`}>
           Only pay per performance
         </h2>
 

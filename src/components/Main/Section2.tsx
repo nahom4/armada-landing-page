@@ -13,7 +13,7 @@ export default function Component() {
           <div> 
             <div className="flex items-center space-x-2 mb-6">
               <Image src="/logo.svg" width={24} height={24} alt="check" />
-              <span className=" text-2xl font-bold text-blue-300">
+              <span className="font-bold text-[#2EA7E0]">
                 Armada Marketing
               </span>
             </div>
