@@ -6,7 +6,7 @@ function AdvertCard(){
             <div className="h-full relative bg-[#ffffff] border-gray-950 border rounded-xl p-8 flex flex-col gap-4 left-1 bottom-1">
                 <div className="flex justify-center">
                     <Image
-                        src="/tasks-for-bussines-images/Rectangle-43079.png"
+                        src="/businessTaskImages/Rectangle-43079.png"
                         alt="Picture of the author"
                         width={101}
                         height={97}
@@ -26,7 +26,7 @@ function AdvertCard(){
                     <div className="flex">
                         <div className="relative" style={{marginRight: '-5px'}}>
                             <Image
-                            src="/tasks-for-bussines-images/white-man-avatar.png"
+                            src="/businessTaskImages/white-man-avatar.png"
                             alt="Picture of the author"
                             width={36}
                             height={37}
@@ -34,7 +34,7 @@ function AdvertCard(){
                         </div>
                         <div className="relative" style={{marginLeft: '-5px', marginRight: '-5px'}}>
                             <Image
-                            src="/tasks-for-bussines-images/black-girl-avatar.png"
+                            src="/businessTaskImages/black-girl-avatar.png"
                             alt="Picture of the author"
                             width={36}
                             height={37}
@@ -42,7 +42,7 @@ function AdvertCard(){
                         </div>
                         <div className="relative" style={{marginLeft: '-5px'}}>
                             <Image
-                            src="/tasks-for-bussines-images/asian-girl-avatar.png"
+                            src="/businessTaskImages/asian-girl-avatar.png"
                             alt="Picture of the author"
                             width={36}
                             height={37}

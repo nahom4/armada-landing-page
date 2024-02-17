@@ -42,7 +42,7 @@ function Section8(){
    return(<Card title='Apprenticeships' 
    subtitle='Mentor marketing apprentices' 
    description='Mentor vetted marketing apprentices as they help grow your business.' 
-   imgSrc='/tasks-for-bussines-images/app-card-biz.jpg.png' imgAlt='Apprenticeships'/>)
+   imgSrc='/businessTaskImages/app-card-biz.svg' imgAlt='Apprenticeships'/>)
       
 }
 

@@ -23,7 +23,7 @@ function Section4(){
 
                 <div className='w-1/2 m-2 min-w-60'>
                     <Image
-                        src="/tasks-for-bussines-images/review-submissions.png"
+                        src="/businessTaskImages/review-submissions.png"
                         alt="Picture of the author"
                         width={588}
                         height={588}

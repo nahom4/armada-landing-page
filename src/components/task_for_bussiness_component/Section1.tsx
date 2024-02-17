@@ -30,7 +30,7 @@ function Section1(){
                 <div className="flex justify-around items-stretch w-2/3">
                     <div className="my-auto">
                         <Image
-                        src="tasks-for-bussines-images/black-man.svg"
+                        src="/businessTaskImages/black-man.svg"
                         alt="Picture of the author"
                         width={71}
                         height={121}
@@ -44,7 +44,7 @@ function Section1(){
                     <div className="flex flex-col justify-between">
                         <div>
                             <Image
-                            src="/./tasks-for-bussines-images/white-man.svg"
+                            src="/businessTaskImages/white-man.svg"
                             alt="Picture of the author"
                             width={71}
                             height={121}
@@ -52,7 +52,7 @@ function Section1(){
                         </div>
                         <div>
                             <Image
-                            src="tasks-for-bussines-images/asian-girl.svg"
+                            src="/businessTaskImages/asian-girl.svg"
                             alt="Picture of the author"
                             width={71}
                             height={121}
