@@ -12,7 +12,7 @@ function Section1(){
                     </p>
                     <h1 className={`${IbmPlexSerif.className} text-[#222222] font-bold text-center`}>
                         <span>
-                            Ease marketing task 
+                            Loose marketing task 
                         </span><br/>
                         <span>
                             delegation with shared skills.
