@@ -1,9 +1,8 @@
-import { Box } from "@/util/Box";
-import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image"
-import { FaChevronCircleRight } from 'react-icons/fa';
-import { FaChevronCircleLeft} from 'react-icons/fa';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLefttIcon from '@mui/icons-material/ChevronLeft'
+import { rubik } from "@/app/fonts";
+
 function Card({
     title,
     subtitle,
@@ -18,28 +17,32 @@ function Card({
     imgAlt:string
   }) {
     return (
-      <div className="shadow-bottom-left text-black border bg-[#ffffff] border-slate-950 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl">
-        <div className="flex gap-4 ">
-            <div>
-                <Image src={imgSrc} width={64} height={48} alt= {imgAlt}>
-                </Image>
-            </div>
-            <div>
-                <p className="	font-bold">
-                    {title}
-                </p>
+        <div className=" bg-[#ffffff] w-1/3 border border-gray-500	rounded-3xl">
+            <div className="bg-[#ffffff] w-full h-full border border-gray-500 rounde rounded-3xl relative left-1 bottom-1">
+                <div className="bg-[#ffffff] p-5 gap-5  flex flex-col justify-between border-gray-500 rounded-3xl ">
+                    <div className="flex gap-4">
+                        <div>
+                            <Image src={imgSrc} width={64} height={48} alt= {imgAlt}>
+                            </Image>
+                        </div>
+                        <div>
+                            <p className={`${rubik.className} font-bold`}>
+                                {title}
+                            </p>
 
-                <p>
-                    {subtitle}
-                </p>
-            </div>
-           
-        </div>
+                            <p className="text-sm text-[#484848]">
+                                {subtitle}
+                            </p>
+                        </div>
+                    
+                    </div>
 
-        <p>
-            {description}
-        </p>
-      </div>
+                    <p className="text-sm text-[#484848]">
+                        {description}
+                    </p>
+                </div>
+            </div>
+            </div>
     );
   };
   
@@ -47,12 +50,12 @@ function Card({
   
 function Section5(){
     return(
-        <div className="flex flex-col items-center gap-8 bg-[#F6F6F6] justify-center py-20 my-10">
-            <h1 className="font-medium text-center text-[#222222] ">
+        <div className="flex flex-col items-center  bg-[#F6F6F6] justify-center py-28	 my-5">
+            <h2 className="font-bold text-center text-[#413e3e]">
                 <span>Finding remote digital marketers</span><br/> 
                 <span>everywhere</span>
-            </h1>
-            <div className="flex flex-col lg:flex-row justify-center w-3/4 gap-8 text-sm">
+            </h2>
+            <div className="flex flex-col lg:flex-row justify-center w-5/6 gap-8 text-sm py-14">
                 <Card title={"Jack Richardson"}
                     subtitle="Co founder, JSpace"
                     description="
@@ -90,15 +93,13 @@ function Section5(){
                 />
             </div>
 
-
-
-            <div className="flex gap-4">
-                <div>
-                    <FaChevronCircleLeft style={{ backgroundColor: 'transparent' }} />
-                </div>
-                <div>
-                    <FaChevronCircleRight style={{ backgroundColor: 'transparent' }} />
-                </div>
+            <div className="flex gap-4 hover:gap-7 font-thin"> 
+                <div className="border rounded-full border-gray-950 px-1 py-1">
+                    <ChevronLefttIcon style={{ margin: 0, padding: 0}} />  
+                </div>  
+                <div className="border rounded-full border-gray-950 px-1 py-1">
+                    <ChevronRightIcon style={{ margin: 0, padding: 0}} />  
+                </div>  
             </div>
 
         </div>

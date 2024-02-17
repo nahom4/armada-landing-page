@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import { IbmPlexSerif, jost } from '@/app/fonts';
 
 
 interface CardProps {
@@ -21,20 +22,20 @@ const Card: React.FC<CardProps> = ({
   bgColor
 }) => {
   return (
-    <div className={`${bgColor} border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
-      <div className='space-y-7'>
-          <p className="text-2xl">{title}</p>
-          <h3 className="font-semibold">{subtitle}</h3>
-          <p>{description}</p>
+    <div className={`${bgColor} ${jost.className} w-1/2 text-[#222222] border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
+      <div className='flex flex-col gap-4'>
+          <p >{title}</p>
+          <h3 className={`${IbmPlexSerif.className} font-semibold`}>{subtitle}</h3>
+          <p >{description}</p>
         </div>
 
         <div>
           <Image src={imgSrc} alt={imgAlt} width={500} height={700} />
         </div>
    
-      <p className="flex items-center gap-2 hover:gap-4 transition-all duration-200 ease-in-out ">
+      <p className="flex items-center text-sm font-medium	 gap-2 hover:gap-4 transition-all duration-200 ease-in-out ">
         Learn more
-        <FaArrowRight />
+        <ChevronRightIcon style={{ margin: 0, padding: 0}} /> 
       </p>
     </div>
   );
@@ -43,7 +44,7 @@ const Card: React.FC<CardProps> = ({
 function Section3() {
   return (
     <div className='flex justify-center'>
-      <div className="flex flex-col md:flex-row m-7 gap-6 w-3/4 justify-center items-stretch ">
+      <div className="flex flex-col md:flex-row m-7 gap-6 w-5/6 justify-center items-stretch ">
         <Card
           title="Talents"
           subtitle="Gain marketing talent"

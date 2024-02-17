@@ -6,28 +6,27 @@ import Image from "next/image";
 import Section4 from "./Section4";
 import Section6 from "./Section6";
 import Section5 from "./Section5";
-
+import {rubik,jost} from '@/app/fonts'
 function Main() {
   return (
     <div className="flex flex-col gap-8">
     <div className="flex flex-col items-center justify-center text-center relative px-auto">
-      <div className="space-y-3 z-10  font-semibold pt-24">
-        <h1 className=" tracking-tighter">
-          <span>
-            ROI Marketing,Only
-          </span><br/>
-          <span>
-          pay per performance
-          </span>
-          
-        </h1>
-        <p className="mx-auto max-w-[700px]  text-xxl mb-12">
-          No upfront costs. Your ROI Is Our Priority – Pay Us When You Profit.
+      <div className="space-y-3 z-10  font-medium	 pt-40 flex flex-col gap-2">
+        <h2 className={`${rubik.className} tracking-tighter text-[#222222]`}>
+            ROI Marketing, 
+        </h2>
+        <h2 className={`${rubik.className} tracking-tighter text-[#222222]`}>
+          Only pay per performance
+        </h2>
+
+        <p className={`${jost.className} text-xl font-normal mx-auto max-w-[700px]  text-[#444444]`}>
+          <span>No upfront costs. Your ROI Is Our Priority – Pay Us</span><br/>
+          <span> When You Profit.</span> 
         </p>
-        <div className="space-x-4 py-7">
+        <div className="space-x-4 py-4">
           <Link
             href="#_"
-            className=" px-5  bg-[#19ACFF] text-white w-1/6  items-center justify-center p-4  py-3 overflow-hidden font-medium border-[1px] rounded-lg shadow-md group"
+            className=" px-5 text-sm bg-[#19ACFF] text-white w-1/6  items-center justify-center py-4 overflow-hidden  border-[1px] rounded-xl shadow-md group"
           >
               Find A Talent
           </Link>
@@ -35,7 +34,7 @@ function Main() {
       </div>
     </div>
 
-    <div className="flex justify-center">
+    <div className="flex justify-center w-3/4 mx-auto">
       <Image
         src="/images/group.svg"
         alt="Picture of the author"

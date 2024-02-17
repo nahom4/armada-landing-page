@@ -5,7 +5,7 @@ import React from "react";
 import {Popover} from "@headlessui/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import {rubik} from '@/app/fonts'
 function NavLink({link,text }:{link : string, text : string}){
     return (
             <Link
@@ -25,9 +25,9 @@ function Header() {
 
   return (
       <header
-        className={`z-20 fixed w-full bg-white transition-all duration-200 px-6 `}
+        className={`${rubik.className} z-20 fixed w-full bg-white transition-all duration-200 px-6 `}
       >
-        <div className="mx-auto px-4 py-2 flex justify-between items-center ">
+        <div className="w-3/4 mx-auto px-4 py-4 flex justify-between items-center ">
           <div className="md:flex gap-2 items-center hidden">
             <Image
               src="/logo.svg"
@@ -35,7 +35,7 @@ function Header() {
               height={30}
               alt="Armada Marketing"
             />
-            <h1 className="text-lg font-sans font-bold ">Armada Marketing</h1>
+            <h1 className="text-sm font-bold ">Armada Marketing</h1>
           </div>
 
           <Popover className="md:hidden w-full ">
@@ -64,7 +64,7 @@ function Header() {
               </div>
             </Popover.Panel>
           </Popover>
-          <nav className="space-x-5 md:flex items-center min-w-fit hidden">
+          <nav className="space-x-5 md:flex items-center min-w-fit hidden text-sm">
 
             <NavLink link ='#' text={'Carear'}/>
             <NavLink link ='#' text={'Blog'}/>
