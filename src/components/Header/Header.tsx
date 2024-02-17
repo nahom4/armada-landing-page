@@ -69,7 +69,7 @@ function Header() {
             <NavLink link ='#' text={'Blog'}/>
             <NavLink link ='#' text={'Contact'}/>
             <NavLink link ='#' text={'Contact'}/>
-            <div className="px-3 py-2 bg-[#19ACFF] text-white items-center justify-center overflow-hidden border-[1px] rounded-lg shadow-md group">
+            <div className="px-4 py-2 bg-[#19ACFF] text-white items-center hover:bg-blue-700 justify-center overflow-hidden border-[1px] rounded-lg shadow-md group">
               <NavLink link ='#' text={'Find Talent'}/>
             </div>
           </nav>

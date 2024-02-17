@@ -26,7 +26,7 @@ function Main() {
         <div className="space-x-4 py-4">
           <Link
             href="#_"
-            className=" px-5 text-sm bg-[#19ACFF] text-white w-1/6  items-center justify-center py-4 overflow-hidden  border-[1px] rounded-xl shadow-md group"
+            className=" px-5 text-sm bg-[#19ACFF] hover:bg-blue-700 text-white w-1/6  items-center justify-center py-4 overflow-hidden  border-[1px] rounded-xl shadow-md group"
           >
               Find A Talent
           </Link>
