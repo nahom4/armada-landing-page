@@ -6,7 +6,7 @@ function Section3(){
             <div className="flex flex-col md:flex-row  text-[#222222] justify-between w-3/4 items-center">
                 <div className="w-1/2 m-2 min-w-60">
                     <Image
-                    src="/tasks-for-bussines-images/task-submission.png"
+                    src="/businessTaskImages/task-submission.png"
                     alt="Picture of the author"
                     width={588}
                     height={588}

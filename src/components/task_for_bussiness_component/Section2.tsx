@@ -23,7 +23,7 @@ function Section2(){
 
                 <div className="w-1/2 min-w-60 p-2">
                     <Image
-                        src="/tasks-for-bussines-images/post.png"
+                        src="/businessTaskImages/post.png"
                         alt="Picture of the author"
                         width={588}
                         height={588}
