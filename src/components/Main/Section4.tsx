@@ -7,7 +7,8 @@ function Card({
   title,
   subtitle,
   description,
-  imgSrc,
+  imgSrcLarge,
+  imgSrcSmall,
   imgAlt,
   width,
   height,
@@ -16,7 +17,8 @@ function Card({
   title:string
   subtitle:string
   description:string
-  imgSrc:string
+  imgSrcLarge:string
+  imgSrcSmall:string
   imgAlt:string
   width : number
   height : number
@@ -31,7 +33,8 @@ function Card({
       </div>
 
       <div>
-        <Image src={imgSrc} alt={imgAlt} width={width} height={height} />
+        <Image className='hidden md:block' src={imgSrcLarge} alt={imgAlt} width={width} height={height} />
+        <Image className='md:hidden' src={imgSrcSmall} alt={imgAlt} width={width} height={height} />
       </div>
 
       <p className={`${jost.className} font-normal flex self-start items-center gap-2 hover:gap-4 transition-all duration-200 ease-in-out`}>
@@ -60,7 +63,8 @@ function Section4() {
             subtitle="Ease marketing task delegation with skills."
             description="Post quick and simple tasks to get done by emerging
   marketers."
-            imgSrc="/images/marketing_tasks.png"
+            imgSrcLarge="/images/large/marketing-tasks.svg"
+            imgSrcSmall="/images/small/marketing_tasks.png"
             imgAlt="Marketing professional"
             width={500}
             height={500}
@@ -72,7 +76,8 @@ function Section4() {
   marketers"
             description="Get connected with, manage, and pay vetted
   digital marketers"
-            imgSrc="/images/circle-girl.png"
+            imgSrcLarge="/images/large/circle-girl.svg"
+            imgSrcSmall="/images/small/circle-girl.png"
             imgAlt="Marketing professional"
             width={250}
             height={220}

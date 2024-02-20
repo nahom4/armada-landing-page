@@ -7,23 +7,26 @@ function Card({
     title,
     subtitle,
     description,
-    imgSrc,
+    imgSrcLarge,
+    imgSrcSmall,
     imgAlt,
   }:{
     title:string
     subtitle:string
     description:string
-    imgSrc:string
+    imgSrcLarge:string
+    imgSrcSmall:string
     imgAlt:string
   }) {
     return (
-        <div className=" bg-[#ffffff] w-1/3 border border-gray-500	rounded-3xl">
+        <div className=" bg-[#ffffff] w-[60%] md:w-1/3 border border-gray-500	rounded-3xl">
             <div className="bg-[#ffffff] w-full h-full border border-gray-500 rounde rounded-3xl relative left-1 bottom-1">
                 <div className="bg-[#ffffff] p-5 gap-5  flex flex-col justify-between border-gray-500 rounded-3xl ">
                     <div className="flex gap-4">
                         <div>
-                            <Image src={imgSrc} width={64} height={48} alt= {imgAlt}>
-                            </Image>
+                            <Image className="hidden md:block" src={imgSrcLarge} width={64} height={48} alt= {imgAlt}/>
+                            <Image className=" md:hidden" src={imgSrcSmall} width={64} height={48} alt= {imgAlt}/>
+             
                         </div>
                         <div>
                             <p className={`${rubik.className} font-bold`}>
@@ -55,7 +58,7 @@ function Section5(){
                 <span>Finding remote digital marketers</span><br/> 
                 <span>everywhere</span>
             </h2>
-            <div className="flex flex-col lg:flex-row justify-center w-5/6 gap-8 text-sm py-14">
+            <div className="flex flex-col lg:flex-row justify-center items-center w-5/6 gap-8 text-sm py-14">
                 <Card title={"Jack Richardson"}
                     subtitle="Co founder, JSpace"
                     description="
@@ -64,7 +67,8 @@ function Section5(){
                     has not only yielded a remarkable surge in user engagement 
                     but has also vividly demonstrated the unparalleled efficacy
                     of Armada's innovative strategies and seamless collaboration."
-                    imgSrc="/images/jack.svg"
+                    imgSrcLarge="/images/large/jack.svg"
+                    imgSrcSmall="/images/small/jack.png"
                     imgAlt="Jacks Image"
 
                 />
@@ -76,7 +80,8 @@ function Section5(){
                     and collaborative expertise were invaluable, showcasing their prowess in delivering
                     tangible and lasting outcomes."
 
-                    imgSrc="/images/Hanna.svg"
+                    imgSrcLarge="/images/large/Hanna.svg"
+                    imgSrcSmall="/images/small/Hanna.png"
                     imgAlt="Hannas Image"
 
                 />
@@ -87,7 +92,8 @@ function Section5(){
                     The impressive marketing team and strategies they implemented played a crucial role
                     in this success. We highly recommend leveraging their talents for notable results,
                     solidifying them as invaluable partners in our growth journey."
-                    imgSrc="/images/floyd.svg"
+                    imgSrcLarge="/images/large/floyd.svg"
+                    imgSrcSmall="/images/small/floyd.png"
                     imgAlt="Floyd Image"
 
                 />
