@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   description,
   imgSrc,
   imgAlt,
-  bgColor
+  bgColor,
 }) => {
   return (
     <div className={`${bgColor} ${jost.className} w-1/2 text-[#222222] border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
         </div>
 
         <div>
-          <Image src={imgSrc} alt={imgAlt} width={500} height={700} />
+          <Image src={imgSrc} alt={imgAlt} width={500} height={700}  blurDataURL='blurImage'/>
         </div>
    
       <p className="flex items-center text-sm font-medium	 gap-2 hover:gap-4 transition-all duration-200 ease-in-out ">
@@ -50,7 +50,7 @@ function Section3() {
           subtitle="Gain marketing talent"
           description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
           imgAlt="Marketing professional"
-          imgSrc="/businessTaskImages2/talents.png"
+          imgSrc="/images/talents.png"
           bgColor='bg-blue-50'
         />
         <Card
@@ -58,7 +58,7 @@ function Section3() {
           subtitle="Learn about marketing"
           description="Learn marketing basics with our blog and build an
   impressive talented marketing team. "
-          imgSrc="/businessTaskImages2/books.png"
+          imgSrc="/images/books.png"
           imgAlt="Marketing professional"
           bgColor = "bg-[#D7D7D7]"
         />

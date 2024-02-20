@@ -23,7 +23,15 @@ function Section2(){
 
                 <div className="w-1/2 min-w-60 p-2">
                     <Image
-                        src="/businessTaskImages/post.png"
+                        className="hidden md:block"
+                        src="/businessTaskImages/large/post.svg"
+                        alt="Picture of the author"
+                        width={588}
+                        height={588}
+                    /> 
+                    <Image
+                        className="md:hidden"
+                        src="/businessTaskImages/small/post.png"
                         alt="Picture of the author"
                         width={588}
                         height={588}
