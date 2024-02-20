@@ -60,7 +60,7 @@ function Section4() {
             subtitle="Ease marketing task delegation with skills."
             description="Post quick and simple tasks to get done by emerging
   marketers."
-            imgSrc="images/marketing_tasks.svg"
+            imgSrc="/businessTaskImages2/marketing_tasks.png"
             imgAlt="Marketing professional"
             width={500}
             height={500}
@@ -72,7 +72,7 @@ function Section4() {
   marketers"
             description="Get connected with, manage, and pay vetted
   digital marketers"
-            imgSrc="/circle-girl.svg"
+            imgSrc="/businessTaskImages2/circle-girl.png"
             imgAlt="Marketing professional"
             width={250}
             height={220}

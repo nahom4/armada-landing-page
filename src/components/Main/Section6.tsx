@@ -14,7 +14,7 @@ function Section6() {
         <div className="space-x-4 py-7">
           <Link
             href="#_"
-            className="bg-[#19ACFF] py-4 px-5 text-sm text-white w-1/6  items-center justify-center overflow-hidden border-[1px] rounded-xl shadow-md group"
+            className="bg-[#19ACFF] hover:bg-blue-700 py-4 px-5 text-sm text-white w-1/6  items-center justify-center overflow-hidden border-[1px] rounded-xl shadow-md group"
           >
               Find A Talent
           </Link>

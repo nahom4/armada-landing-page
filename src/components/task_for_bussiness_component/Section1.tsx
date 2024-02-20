@@ -21,7 +21,7 @@ function Section1(){
                     <p className={`${nunito.className} font-medium	text-[#444444] text-2xl text-center`}>
                     Post simple marketing tasks to get done by emerging marketers.
                     </p>
-                    <div className={`${nunito.className} bg-[#19ACFF] px-5 py-3 rounded-xl text-white`}>
+                    <div className={`${nunito.className} bg-[#19ACFF] hover:bg-blue-700 px-5 py-3 rounded-xl text-white`}>
                         <Link href={'#'}>
                         Get Started
                         </Link>

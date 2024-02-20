@@ -26,7 +26,7 @@ function Main() {
         <div className="space-x-4 py-4">
           <Link
             href="#_"
-            className=" px-5 text-sm bg-[#19ACFF] text-white w-1/6  items-center justify-center py-4 overflow-hidden  border-[1px] rounded-xl shadow-md group"
+            className=" px-5 text-sm bg-[#19ACFF] hover:bg-blue-700 text-white w-1/6  items-center justify-center py-4 overflow-hidden  border-[1px] rounded-xl shadow-md group"
           >
               Find A Talent
           </Link>
@@ -36,7 +36,7 @@ function Main() {
 
     <div className="flex justify-center w-3/4 mx-auto">
       <Image
-        src="/images/group.svg"
+        src="/businessTaskImages2/group.jpg"
         alt="Picture of the author"
         width={1235}
         height={560}
