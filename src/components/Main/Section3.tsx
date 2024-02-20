@@ -50,7 +50,7 @@ function Section3() {
           subtitle="Gain marketing talent"
           description="Work with a marketer for 3 months and gain the marketing experience you need to find customers."
           imgAlt="Marketing professional"
-          imgSrc="images/talents.svg"
+          imgSrc="/businessTaskImages2/talents.png"
           bgColor='bg-blue-50'
         />
         <Card
@@ -58,7 +58,7 @@ function Section3() {
           subtitle="Learn about marketing"
           description="Learn marketing basics with our blog and build an
   impressive talented marketing team. "
-          imgSrc="/books.svg"
+          imgSrc="/businessTaskImages2/books.png"
           imgAlt="Marketing professional"
           bgColor = "bg-[#D7D7D7]"
         />

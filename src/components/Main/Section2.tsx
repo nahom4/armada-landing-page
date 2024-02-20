@@ -49,7 +49,7 @@ export default function Component() {
               alt="Marketing professional"
               width={700}
               height={700}
-              src="/circular-image.svg"
+              src="/businessTaskImages2/circular-image.png"
             />
           </div>
         </div>

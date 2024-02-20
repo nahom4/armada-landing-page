@@ -36,7 +36,7 @@ function Main() {
 
     <div className="flex justify-center w-3/4 mx-auto">
       <Image
-        src="/images/group.svg"
+        src="/businessTaskImages2/group.jpg"
         alt="Picture of the author"
         width={1235}
         height={560}
