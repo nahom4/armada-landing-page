@@ -23,7 +23,15 @@ function Section4(){
 
                 <div className='w-1/2 m-2 min-w-60'>
                     <Image
-                        src="/businessTaskImages/review-submissions.png"
+                        className='hidden md:block'
+                        src="/businessTaskImages/large/review-submissions.svg"
+                        alt="Picture of the author"
+                        width={588}
+                        height={588}
+                    />
+                    <Image
+                        className='md:hidden'
+                        src="/businessTaskImages/small/review-submissions.png"
                         alt="Picture of the author"
                         width={588}
                         height={588}

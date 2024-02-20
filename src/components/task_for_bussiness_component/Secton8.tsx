@@ -39,10 +39,24 @@ interface CardProps {
   };
 function Section8(){
 
-   return(<Card title='Apprenticeships' 
-   subtitle='Mentor marketing apprentices' 
-   description='Mentor vetted marketing apprentices as they help grow your business.' 
-   imgSrc='/businessTaskImages/app-card-biz.svg' imgAlt='Apprenticeships'/>)
+   return(
+      <div>
+        <div className='hidden md:block'>
+          <Card title='Apprenticeships' 
+          subtitle='Mentor marketing apprentices' 
+          description='Mentor vetted marketing apprentices as they help grow your business.' 
+          imgSrc='/businessTaskImages/large/app-card-biz.svg' imgAlt='Apprenticeships'/>
+        </div>
+
+        <div className='md:hidden'>
+          <Card title='Apprenticeships' 
+          subtitle='Mentor marketing apprentices' 
+          description='Mentor vetted marketing apprentices as they help grow your business.' 
+          imgSrc='/businessTaskImages/small/app-card-biz.png' imgAlt='Apprenticeships'/>
+        </div>
+      </div>
+   
+   )
       
 }
 

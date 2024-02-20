@@ -18,7 +18,15 @@ function Section6(){
                 </div>
                 <div className="min-w-60">
                     <Image
-                            src="/businessTaskImages/tasks-business-hero.svg"
+                            className="hidden md:block"
+                            src="/businessTaskImages/large/tasks-business-hero.svg"
+                            alt="Picture of the author"
+                            width={792} 
+                            height={594}
+                        />
+                    <Image
+                            className="md:hidden"
+                            src="/businessTaskImages/small/tasks-business-hero.png"
                             alt="Picture of the author"
                             width={792} 
                             height={594}

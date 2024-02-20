@@ -29,12 +29,22 @@ function Section1(){
                 </div>
                 <div className="flex justify-around items-stretch w-2/3">
                     <div className="my-auto">
-                        <Image
-                        src="/businessTaskImages/black-man.svg"
-                        alt="Picture of the author"
-                        width={71}
-                        height={121}
-                        /> 
+                        <div>
+                            <Image
+                            className="hidden md:block"
+                            src="/businessTaskImages/large/black-man.svg"
+                            alt="Picture of the author"
+                            width={71}
+                            height={121}
+                            /> 
+                            <Image
+                            className="md:hidden"
+                            src="/businessTaskImages/small/black-man.png"
+                            alt="Picture of the author"
+                            width={71}
+                            height={121}
+                            /> 
+                        </div>
                     </div>
 
                     <div>
@@ -44,7 +54,16 @@ function Section1(){
                     <div className="flex flex-col justify-between">
                         <div>
                             <Image
-                            src="/businessTaskImages/white-man.svg"
+                            className="hidden md:block"
+                            src="/businessTaskImages/large/white-man.svg"
+                            alt="Picture of the author"
+                            width={71}
+                            height={121}
+                            /> 
+
+                            <Image
+                            className="md:hidden"
+                            src="/businessTaskImages/small/white-man.png"
                             alt="Picture of the author"
                             width={71}
                             height={121}
@@ -52,7 +71,15 @@ function Section1(){
                         </div>
                         <div>
                             <Image
-                            src="/businessTaskImages/asian-girl.svg"
+                            className="hidden md:block"
+                            src="/businessTaskImages/large/asian-girl.svg"
+                            alt="Picture of the author"
+                            width={71}
+                            height={121}
+                            /> 
+                            <Image
+                            className="md:hidden"
+                            src="/businessTaskImages/small/asian-girl.png"
                             alt="Picture of the author"
                             width={71}
                             height={121}
