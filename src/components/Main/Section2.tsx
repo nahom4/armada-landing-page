@@ -46,10 +46,18 @@ export default function Component() {
           </div>
           <div className="min-w-60 order-first md:order-last w-3/4">
             <Image
+              className="hidden md:block"
               alt="Marketing professional"
               width={700}
               height={700}
-              src="/images/circular-image.png"
+              src="/images/large/circular-image.svg"
+            />
+            <Image
+              className="md:hidden"
+              alt="Marketing professional"
+              width={700}
+              height={700}
+              src="/images/small/circular-image.png"
             />
           </div>
         </div>

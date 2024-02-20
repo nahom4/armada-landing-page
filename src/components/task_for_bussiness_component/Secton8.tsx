@@ -19,10 +19,10 @@ interface CardProps {
     imgAlt,
   }) => {
     return (
-      <div className="w-1/2 my-20 text-black border-2 bg-blue-50 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl">
+      <div className="w-[75%] my-20 text-black border-2 mx-auto bg-blue-50 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl">
         <div className="space-y-4">
-        <p className={`${nunito.className} font-semibold`}>{title}</p>
-          <h4 className={`${IbmPlexSerif.className} font-bold`}>{subtitle}</h4>
+        <p className={`${nunito.className} font-bold`}>{title}</p>
+          <h3 className={`${IbmPlexSerif.className} font-bold`}>{subtitle}</h3>
           <p>{description}</p>
         </div>
   
