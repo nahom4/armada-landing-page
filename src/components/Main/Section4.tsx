@@ -33,8 +33,7 @@ function Card({
       </div>
 
       <div>
-        <Image className='hidden md:block' src={imgSrcLarge} alt={imgAlt} width={width} height={height} />
-        <Image className='md:hidden' src={imgSrcSmall} alt={imgAlt} width={width} height={height} />
+        <Image  src={imgSrcSmall} alt={imgAlt} width={width} height={height} />
       </div>
 
       <p className={`${jost.className} font-normal flex self-start items-center gap-2 hover:gap-4 transition-all duration-200 ease-in-out`}>

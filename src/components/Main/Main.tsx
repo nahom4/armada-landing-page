@@ -35,15 +35,8 @@ function Main() {
     </div>
 
     <div className="flex justify-center w-3/4 mx-auto">
+     
       <Image
-        className ='hidden md:block'
-        src="/images/large/group.svg"
-        alt="Picture of the author"
-        width={1235}
-        height={560}
-      /> 
-      <Image
-        className="md:hidden"
         src="/images/small/group_image.png"
         alt="Picture of the author"
         width={1235}

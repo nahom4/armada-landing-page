@@ -32,14 +32,6 @@ function Section1(){
                     <div className="my-auto">
                         <div>
                             <Image
-                            className="hidden md:block"
-                            src="/businessTaskImages/large/black-man.svg"
-                            alt="Picture of the author"
-                            width={71}
-                            height={121}
-                            /> 
-                            <Image
-                            className="md:hidden"
                             src="/businessTaskImages/small/black-man.png"
                             alt="Picture of the author"
                             width={71}
@@ -54,32 +46,16 @@ function Section1(){
 
                     <div className="flex flex-col justify-between">
                         <div>
+                            
                             <Image
-                            className="hidden md:block"
-                            src="/businessTaskImages/large/white-man.svg"
-                            alt="Picture of the author"
-                            width={71}
-                            height={121}
-                            /> 
-
-                            <Image
-                            className="md:hidden"
                             src="/businessTaskImages/small/white-man.png"
                             alt="Picture of the author"
                             width={71}
                             height={121}
                             /> 
                         </div>
-                        <div>
+                        <div> 
                             <Image
-                            className="hidden md:block"
-                            src="/businessTaskImages/large/asian-girl.svg"
-                            alt="Picture of the author"
-                            width={71}
-                            height={121}
-                            /> 
-                            <Image
-                            className="md:hidden"
                             src="/businessTaskImages/small/asian-girl.png"
                             alt="Picture of the author"
                             width={71}
