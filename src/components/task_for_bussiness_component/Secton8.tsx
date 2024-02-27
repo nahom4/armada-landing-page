@@ -41,14 +41,7 @@ function Section8(){
 
    return(
       <div>
-        <div className='hidden md:block'>
-          <Card title='Apprenticeships' 
-          subtitle='Mentor marketing apprentices' 
-          description='Mentor vetted marketing apprentices as they help grow your business.' 
-          imgSrc='/businessTaskImages/large/app-card-biz.svg' imgAlt='Apprenticeships'/>
-        </div>
-
-        <div className='md:hidden'>
+        <div>
           <Card title='Apprenticeships' 
           subtitle='Mentor marketing apprentices' 
           description='Mentor vetted marketing apprentices as they help grow your business.' 

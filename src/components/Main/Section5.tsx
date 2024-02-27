@@ -24,8 +24,7 @@ function Card({
                 <div className="bg-[#ffffff] p-5 gap-5  flex flex-col justify-between border-gray-500 rounded-3xl ">
                     <div className="flex gap-4">
                         <div>
-                            <Image className="hidden md:block" src={imgSrcLarge} width={64} height={48} alt= {imgAlt}/>
-                            <Image className=" md:hidden" src={imgSrcSmall} width={64} height={48} alt= {imgAlt}/>
+                            <Image  src={imgSrcSmall} width={64} height={48} alt= {imgAlt}/>
              
                         </div>
                         <div>

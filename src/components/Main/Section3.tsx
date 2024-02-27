@@ -32,8 +32,7 @@ const Card: React.FC<CardProps> = ({
         </div>
 
         <div>
-          <Image className='hidden md:block' src={imgSrcLarge} alt={imgAlt} width={500} height={700}  blurDataURL='blurImage'/>
-          <Image className='md:hidden' src={imgSrcSmall} alt={imgAlt} width={500} height={700}  blurDataURL='blurImage'/>
+          <Image src={imgSrcSmall} alt={imgAlt} width={500} height={700}  blurDataURL='blurImage'/>
         </div>
    
       <p className="flex items-center text-sm font-medium	 gap-2 hover:gap-4 transition-all duration-200 ease-in-out ">
