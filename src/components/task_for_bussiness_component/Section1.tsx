@@ -4,9 +4,8 @@ import AdvertCard from "../../util/Card";
 import { IbmPlexSerif, nunito } from "@/app/fonts";
 function Section1(){
     return(
-        
-        <div className="bg-blue-50 w-full flex flex-col items-center justify-center pt-28 pb-14 border-b border-black">
-            <div className="p-8 mt-8 flex flex-col items-center justify-center ">
+        <div className="bg-blue-50 w-full flex flex-col items-center justify-center pt-5 md:pt-28 pb-14 border-b border-black">
+            <div className="md:p-8 mt-8 flex flex-col items-center justify-center ">
                 <div className="p-8 flex justify-center flex-col items-center gap-6">
                     <p className={`${nunito.className} md:text-2xl text-center font-semibold`}>
                     Tasks for Business

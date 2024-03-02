@@ -6,11 +6,12 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 function AccordionTile({text} : {text : string}) {
   return (
       <Accordion>
         <AccordionSummary
-          expandIcon={<AddCircleIcon />}
+          expandIcon={<AddCircleOutlineIcon  style={{  color: 'black' }} />}
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -29,9 +30,9 @@ function Icon(){
             className=" w-12 h-12 p-3 rounded-full bg-white"
             href={'#'}
         >
-        <FontAwesomeIcon icon={faPlusCircle} size="1x" />
+        <FontAwesomeIcon icon={faPlusCircle} size="1x" style={{ backgroundColor: 'transparent' }} />
       </Link>
-    )
+    ) 
 }
 
 function Section7(){

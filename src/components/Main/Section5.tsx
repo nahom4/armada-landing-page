@@ -19,7 +19,7 @@ function Card({
     imgAlt:string
   }) {
     return (
-        <div className=" bg-[#ffffff] w-[60%] md:w-1/3 border border-gray-500	rounded-3xl">
+        <div className=" bg-[#ffffff] w-[80%] md:w-1/3 border border-gray-500	rounded-3xl">
             <div className="bg-[#ffffff] w-full h-full border border-gray-500 rounde rounded-3xl relative left-1 bottom-1">
                 <div className="bg-[#ffffff] p-5 gap-5  flex flex-col justify-between border-gray-500 rounded-3xl ">
                     <div className="flex gap-4">
@@ -52,12 +52,12 @@ function Card({
   
 function Section5(){
     return(
-        <div className="flex flex-col items-center  bg-[#F6F6F6] justify-center py-28	 my-5">
+        <div className="flex flex-col items-center  bg-[#F6F6F6] justify-center py-28	my-5">
             <h2 className="font-bold text-center text-[#413e3e]">
                 <span>Finding remote digital marketers</span><br/> 
                 <span>everywhere</span>
             </h2>
-            <div className="flex flex-col lg:flex-row justify-center items-center w-5/6 gap-8 text-sm py-14">
+            <div className="flex flex-col lg:flex-row justify-center items-center md:w-3/4 gap-8 text-sm py-14">
                 <Card title={"Jack Richardson"}
                     subtitle="Co founder, JSpace"
                     description="
@@ -99,11 +99,12 @@ function Section5(){
             </div>
 
             <div className="flex gap-4 hover:gap-7 font-thin"> 
-                <div className="border rounded-full border-gray-950 px-1 py-1">
+              
+                <div className="border-2 rounded-full border-gray-950  p-1 flex justify-center items-center">
                     <ChevronLefttIcon style={{ margin: 0, padding: 0}} />  
                 </div>  
-                <div className="border rounded-full border-gray-950 px-1 py-1">
-                    <ChevronRightIcon style={{ margin: 0, padding: 0}} />  
+                <div className="border-2 rounded-full border-gray-950  p-1 flex justify-center items-center">
+                <ChevronRightIcon style={{ margin: 0, padding: 0}} />  
                 </div>  
             </div>
 

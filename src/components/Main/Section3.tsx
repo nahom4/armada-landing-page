@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
   bgColor,
 }) => {
   return (
-    <div className={`${bgColor} ${jost.className} w-[60%] md:w-1/2 text-[#222222] border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
+    <div className={`${bgColor} ${jost.className}  md:w-1/2 text-[#222222] border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
       <div className='flex flex-col gap-4'>
           <p >{title}</p>
           <h3 className={`${IbmPlexSerif.className} font-semibold`}>{subtitle}</h3>
@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({
 function Section3() {
   return (
    
-      <div className="flex flex-col md:flex-row m-7 gap-6 w-5/6 justify-center items-center mx-auto ">
+      <div className="flex flex-col md:flex-row m-7 gap-6 w-3/4 justify-center md:items-stretch items-center mx-auto ">
         <Card
           title="Talents"
           subtitle="Gain marketing talent"

@@ -8,7 +8,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 export default function Component() {
   return (
     <div className={`flex justify-center ${rubik.className} rounded-3xl`}>
-      <div className="bg-[#052127] p-24 m-7 rounded-3xl">
+      <div className="bg-[#052127] p-12 md:p-24 m-7 rounded-3xl">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 justify-between items-center">
           <div> 
             <div className="flex items-center space-x-2 mb-6">
@@ -44,7 +44,7 @@ export default function Component() {
               </Link>
             </div>
           </div>
-          <div className="min-w-60 order-first md:order-last w-3/4">
+          <div className="min-w-40 order-first md:order-last w-3/4">
             <Image
               alt="Marketing professional"
               width={700}

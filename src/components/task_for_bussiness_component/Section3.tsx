@@ -13,7 +13,7 @@ function Section3(){
                     /> 
                 </div>
 
-                <div className="w-2/5 m-2">
+                <div className="md:w-2/5 m-2">
                     <h3 className={`${IbmPlexSerif.className} font-semibold`}>
                         <span>
                         Get submissions
