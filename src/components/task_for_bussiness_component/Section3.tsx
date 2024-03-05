@@ -4,7 +4,7 @@ function Section3(){
     return (
         <div className="flex justify-center py-10">
             <div className="flex flex-col md:flex-row  text-[#222222] justify-between w-3/4 items-center">
-                <div className="w-1/2 m-2 min-w-60">
+                <div className="md:w-1/2 m-2 min-w-60">
                     <Image
                     src="/businessTaskImages/small/task-submission.png"
                     alt="Picture of the author"
@@ -13,7 +13,7 @@ function Section3(){
                     /> 
                 </div>
 
-                <div className="w-2/5 m-2">
+                <div className="md:w-2/5 m-2">
                     <h3 className={`${IbmPlexSerif.className} font-semibold`}>
                         <span>
                         Get submissions

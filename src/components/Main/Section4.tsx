@@ -47,9 +47,9 @@ function Card({
 
 function Section4() {
   return (
-    <div className={`bg-[#111111] text-white p-12 py-28 flex flex-col items-centerd`}>
-      <div className='flex flex-col items-center w-5/6 mx-auto'>
-        <h2 className= {`${rubik.className} font-bold`}>Finding remote marketing talent</h2>
+    <div className={`bg-[#111111] text-white pt-12 md:py-36 flex flex-col items-centerd`}>
+      <div className='flex flex-col items-center md:w-5/6 md:mx-auto '>
+        <h2 className= {`${rubik.className} font-bold text-center`}>Finding remote marketing talent</h2>
         <p className="my-7 md:text-lg  text-center font-sans">
           {" "}
           Hunting for remote marketing stars is like finding digital unicorns – it takes a mix of tech savvy and a

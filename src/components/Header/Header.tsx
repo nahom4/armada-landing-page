@@ -2,10 +2,58 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {Popover} from "@headlessui/react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {jost, rubik} from '@/app/fonts'
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Fade from '@mui/material/Fade';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+export  function FadeMenu() {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div>
+      <Button
+        id="fade-button"
+        aria-controls={open ? 'fade-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        <FontAwesomeIcon icon={faBars} style={{margin : 0, padding : 0}}/>
+      </Button>
+      <Menu
+        id="fade-menu"
+        MenuListProps={{
+          'aria-labelledby': 'fade-button',
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={Fade}
+      >
+        <MenuItem><NavLink link ='#' text={'Carear'}/></MenuItem>
+        <MenuItem><NavLink link ='#' text={'Blog'}/></MenuItem>
+        <MenuItem><NavLink link ='#' text={'Contact'}/></MenuItem>
+        <MenuItem><NavLink link ='#' text={'Contact'}/></MenuItem>
+        <MenuItem>
+          <div className="px-4 py-2 bg-[#19ACFF] text-white items-center hover:bg-blue-700 justify-center overflow-hidden border-[1px] rounded-lg shadow-md group">
+            <NavLink link ='#' text={'Find Talent'}/>
+          </div>
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+}
+
 function NavLink({link,text }:{link : string, text : string}){
     return (
             <Link
@@ -25,9 +73,12 @@ function Header() {
 
   return (
       <header
-        className={`${rubik.className} z-20 fixed w-full bg-white transition-all duration-200 px-6 `}
+        className={`${rubik.className} z-20 fixed w-full bg-white transition-all duration-200 `}
       >
-        <div className="w-3/4 mx-auto px-4 py-4 flex justify-between items-center ">
+        <div className="md:hidden my-1">
+          <FadeMenu/>
+        </div>
+        <div className="w-3/4 mx-auto px-4 md:py-4 flex justify-between items-center ">
           <div className="md:flex gap-2 items-center hidden">
             <Image
               src="/logo.svg"
@@ -38,32 +89,6 @@ function Header() {
             <h1 className="text-sm font-bold ">Armada Marketing</h1>
           </div>
 
-          <Popover className="md:hidden w-full ">
-            <Popover.Button>
-              <div>
-                <FontAwesomeIcon icon={faBars} />
-              </div>
-            </Popover.Button>
-            <Popover.Panel className="md:hidden w-full bg-white-500">
-              <div className="flex flex-col space-y-4 md:hidden ">
-                <div className="w-full py-2 mb-2 bg-slate-50">
-                  <NavLink link ='#' text={'Carear'}/>
-                </div>
-                <div className="w-full py-2 mb-2 bg-slate-50">
-                  <NavLink link ='#' text={'Blog'}/>
-                </div>
-                <div className="w-full py-2 mb-2 bg-slate-50">
-                  <NavLink link ='#' text={'Contact'}/>
-                </div>
-                <div className="w-full py-2 mb-2 bg-slate-50">
-                  <NavLink link ='#' text={'Carear'}/>
-                </div>
-                <div className="w-full py-2 mb-2 bg-slate-50">
-                  <NavLink link ='#' text={'Find A Talent'}/>
-                </div> 
-              </div>
-            </Popover.Panel>
-          </Popover>
           <nav className={`${jost.className} space-x-5 md:flex items-center min-w-fit hidden text-sm`}>
             <NavLink link ='#' text={'Carear'}/>
             <NavLink link ='#' text={'Blog'}/>

@@ -2,9 +2,9 @@ import { IbmPlexSerif, nunito } from '@/app/fonts'
 import Image from 'next/image'
 function Section4(){
     return (
-        <div className='flex justify-center py-10'>
+        <div className='flex justify-center  md:py-10'>
             <div className='flex flex-col md:flex-row justify-between w-3/4 items-center  text-[#222222]'>
-                <div className='w-2/5 m-2'>
+                <div className='md:w-2/5 m-2'>
                     <h3 className={`${IbmPlexSerif.className} font-semibold`}>
                         <span>
                             Help emerging
