@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Section2(){
     return (
-            <div className="flex flex-col text-[#222222] md:flex-row justify-between w-3/4 items-center flex-wrap md:mx-auto">
-                <div className="md:w-2/5 min-w-60 p-2">
+            <div className="flex flex-col text-[#222222] md:flex-row justify-between w-3/4 items-center  md:mx-auto">
+                <div className="md:w-2/5 md:p-2">
                     <h3 className={`${IbmPlexSerif.className} font-semibold`}>
                         <span> 
                             Post a quick and
@@ -21,7 +21,7 @@ function Section2(){
                     </p>
                 </div>
 
-                <div className="md:w-1/2 min-w-40 p-2">
+                <div className="md:w-1/2 min-w-60 p-2">
                     <Image
                         src="/businessTaskImages/small/post.png"
                         alt="Picture of the author"

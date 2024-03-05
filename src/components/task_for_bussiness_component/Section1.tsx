@@ -18,7 +18,7 @@ function Section1(){
                             delegation with shared skills.
                         </span>
                     </h1>
-                    <p className={`${nunito.className} font-medium	text-[#444444] text-2xl text-center`}>
+                    <p className={`${nunito.className} font-medium	text-[#444444] md:text-2xl text-center`}>
                     Post simple marketing tasks to get done by emerging marketers.
                     </p>
                     <div className={`${nunito.className} bg-[#19ACFF] hover:bg-blue-700 px-5 py-3 rounded-xl text-white`}>
@@ -27,7 +27,7 @@ function Section1(){
                         </Link>
                     </div>
                 </div>
-                <div className="flex justify-around items-stretch w-2/3">
+                <div className="flex items-stretch md:w-2/3 gap-4 p-2">
                     <div className="my-auto">
                         <div>
                             <Image

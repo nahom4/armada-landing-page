@@ -14,7 +14,7 @@ function Main(){
     return (
         <div className="flex flex-col items-center">
             <Section1/>
-            <h2 className={`${IbmPlexSerif.className} font-semibold text-[#222222] my-20`}>
+            <h2 className={`${IbmPlexSerif.className} font-semibold text-[#222222] my-8 md:my-20`}>
                 How it Works
             </h2>
             <Section2/>
