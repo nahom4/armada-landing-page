@@ -52,12 +52,12 @@ function Card({
   
 function Section5(){
     return(
-        <div className="flex flex-col items-center  bg-[#F6F6F6] justify-center py-28	my-5">
+        <div className="flex flex-col items-center  bg-[#F6F6F6] justify-center py-28 my-5">
             <h2 className="font-bold text-center text-[#413e3e]">
                 <span>Finding remote digital marketers</span><br/> 
                 <span>everywhere</span>
             </h2>
-            <div className="flex flex-col lg:flex-row justify-center items-center md:w-3/4 gap-8 text-sm py-14">
+            <div className="flex flex-col md:flex-row justify-center items-center md:w-3/4 gap-8 text-sm py-14">
                 <Card title={"Jack Richardson"}
                     subtitle="Co founder, JSpace"
                     description="

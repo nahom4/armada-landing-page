@@ -25,7 +25,7 @@ function Card({
   bgColor : string
 }) {
   return (
-    <div className={`${bgColor} ${jost.className} font-medium	 text-black border-2 p-10 space-y-5 mt-10 rounded-6xl flex flex-col justify-between items-center rounded-3xl`}>
+    <div className={`${bgColor} ${jost.className} font-medium	 text-black border-2 p-5 md:p-10 space-y-5 mt-10 rounded-6xl flex flex-col justify-between items-center rounded-3xl md:w-[50%]`}>
       <div className="space-y-4">
         <p>{title}</p>
         <p className={`${IbmPlexSerif.className} font-semibold md:text-3xl`}>{subtitle}</p>
@@ -47,7 +47,7 @@ function Card({
 
 function Section4() {
   return (
-    <div className={`bg-[#111111] text-white pt-12 md:py-36 flex flex-col items-centerd`}>
+    <div className={`bg-[#111111] text-white py-12 md:py-36 flex flex-col items-centerd px-6`}>
       <div className='flex flex-col items-center md:w-5/6 md:mx-auto '>
         <h2 className= {`${rubik.className} font-bold text-center`}>Finding remote marketing talent</h2>
         <p className="my-7 md:text-lg  text-center font-sans">
@@ -56,7 +56,7 @@ function Section4() {
           keen sense for the real gems who can spark online magic for your brand. Let's build a virtual dream
           team together!
         </p>
-        <div className="flex flex-col md:flex-row mx-7 gap-6 ">
+        <div className="flex flex-col md:flex-row md:mx-7 gap-6 ">
           <Card
             title="Tasks"
             subtitle="Ease marketing task delegation with skills."

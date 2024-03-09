@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
   bgColor,
 }) => {
   return (
-    <div className={`${bgColor} ${jost.className}  md:w-1/2 text-[#222222] border-2 p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
+    <div className={`${bgColor} ${jost.className}  md:w-1/2 text-[#222222] border-2 p-6 md:p-12 space-y-5 rounded-4xl flex flex-col justify-between rounded-3xl`}>
       <div className='flex flex-col gap-4'>
           <p >{title}</p>
           <h3 className={`${IbmPlexSerif.className} font-semibold`}>{subtitle}</h3>
