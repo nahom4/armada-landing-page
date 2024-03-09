@@ -10,7 +10,7 @@ function Section6(){
                         <span>Crowd source your</span> <br/>
                         <span>marketing tasks today</span> 
                     </h1>
-                    <div className="bg-[#513DFF] py-4 hover:bg-blue-700 rounded-xl text-white w-1/4 text-center">
+                    <div className="bg-[#513DFF] px-3 py-2 md:px-6 md:py-4 text-sm md:text-base hover:bg-blue-700 rounded-xl text-white text-center">
                             <Link href={'#'}>
                             Get Started
                             </Link>
