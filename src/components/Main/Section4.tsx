@@ -26,7 +26,7 @@ function Card({
 }) {
   return (
     <div className={`${bgColor} ${jost.className} font-medium	 text-black border-2 p-5 md:p-10 space-y-5 mt-10 rounded-6xl flex flex-col justify-between items-center rounded-3xl md:w-[50%]`}>
-      <div className="space-y-4">
+      <div className='w-full'>
         <p>{title}</p>
         <p className={`${IbmPlexSerif.className} font-semibold md:text-3xl`}>{subtitle}</p>
         <p className={`font-normal  text-[#444444]`}>{description}</p>

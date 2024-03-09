@@ -21,7 +21,7 @@ function Section4(){
                     </p>
                 </div>
 
-                <div className='w-1/2 m-2 min-w-60'>
+                <div className='md:w-1/2 m-2 min-w-60 '>
                     <Image
                         src="/businessTaskImages/small/review-submissions.png"
                         alt="Picture of the author"

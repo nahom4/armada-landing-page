@@ -57,7 +57,7 @@ function Section5(){
                 <span>Finding remote digital marketers</span><br/> 
                 <span>everywhere</span>
             </h2>
-            <div className="flex flex-col md:flex-row justify-center items-center md:w-3/4 gap-8 text-sm py-14">
+            <div className="flex flex-col md:w-full md:px-4 md:flex-row justify-center items-center md:items-stretch lg:w-3/4 gap-8 text-sm py-14">
                 <Card title={"Jack Richardson"}
                     subtitle="Co founder, JSpace"
                     description="

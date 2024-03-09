@@ -44,7 +44,7 @@ export default function Component() {
               </Link>
             </div>
           </div>
-          <div className="min-w-40 order-first md:order-last w-3/4">
+          <div className="min-w-40 order-first md:order-last w-1/2">
             <Image
               alt="Marketing professional"
               width={700}
